@@ -16,6 +16,38 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+### Features implemented
+- Dynamic table with sorting, global search, client-side pagination
+- Manage Columns modal: add fields, show/hide, reorder (persisted)
+- CSV import (PapaParse) with schema validation, CSV export (visible columns only)
+- Inline editing with Save All / Cancel All; row delete with confirm
+- Theme toggle (light/dark), responsive UI using MUI v5
+
+### Project structure
+- `src/app`: App Router pages and layout
+- `src/components`: Reusable UI components (DataTable, dialogs, toggles)
+- `src/redux`: Redux Toolkit store and slices, persisted via redux-persist
+- `src/hooks`: Typed redux hooks
+- `src/utils`: CSV helpers
+- `public/sample.csv`: Example data
+
+### Scripts
+- `npm run dev` — start dev server
+- `npm run build` — production build
+- `npm start` — run production build
+
+### Docker
+Build and run the production image:
+
+```bash
+docker build -t dynamic-data-table-manager .
+docker run -p 3000:3000 dynamic-data-table-manager
+```
+
+### CSV notes
+- Required headers: `Name, Email, Age, Role`
+- Additional columns are allowed and will be added automatically
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.

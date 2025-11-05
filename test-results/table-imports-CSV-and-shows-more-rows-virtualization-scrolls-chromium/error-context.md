@@ -1,0 +1,129 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - alert [ref=e2]
+  - generic [ref=e3]:
+    - button "Toggle theme" [ref=e5] [cursor=pointer]:
+      - img [ref=e6]
+    - generic [ref=e8]:
+      - generic [ref=e10]:
+        - heading "Dynamic Data Table Manager" [level=6] [ref=e11]
+        - generic [ref=e12]:
+          - generic [ref=e14]:
+            - textbox "Global search" [ref=e15]:
+              - /placeholder: Search...
+            - group
+          - button "Manage Columns" [ref=e16] [cursor=pointer]:
+            - img [ref=e17]
+          - generic "Export CSV" [ref=e19]:
+            - button "Export CSV" [ref=e20] [cursor=pointer]:
+              - img [ref=e21]
+          - button "Import CSV" [ref=e23] [cursor=pointer]:
+            - img [ref=e25]
+            - text: Import CSV
+          - button "Start editing" [ref=e27] [cursor=pointer]:
+            - img [ref=e28]
+      - grid "Dynamic data grid" [ref=e32]:
+        - rowgroup [ref=e33]:
+          - row "Select row Name Email Age Role Actions" [ref=e34]:
+            - columnheader "Select row" [ref=e35]
+            - columnheader "Name" [ref=e36]:
+              - button "Name" [ref=e37]:
+                - button "Name" [ref=e38] [cursor=pointer]:
+                  - text: Name
+                  - img [ref=e39]
+            - columnheader "Email" [ref=e41]:
+              - button "Email" [ref=e42]:
+                - button "Email" [ref=e43] [cursor=pointer]:
+                  - text: Email
+                  - img [ref=e44]
+            - columnheader "Age" [ref=e46]:
+              - button "Age" [ref=e47]:
+                - button "Age" [ref=e48] [cursor=pointer]:
+                  - text: Age
+                  - img [ref=e49]
+            - columnheader "Role" [ref=e51]:
+              - button "Role" [ref=e52]:
+                - button "Role" [ref=e53] [cursor=pointer]:
+                  - text: Role
+                  - img [ref=e54]
+            - status [ref=e56]
+            - columnheader "Actions" [ref=e57]
+        - rowgroup [ref=e58]:
+          - generic [ref=e60]:
+            - row "Select row 4ea79023-002b-4dd9-8075-59dac7947bb4 Alice Johnson alice@example.com 29 Engineer Delete row" [ref=e61]:
+              - gridcell "Select row 4ea79023-002b-4dd9-8075-59dac7947bb4" [ref=e62]:
+                - generic [ref=e63] [cursor=pointer]:
+                  - checkbox "Select row 4ea79023-002b-4dd9-8075-59dac7947bb4" [ref=e64]
+                  - img [ref=e65]
+              - gridcell "Alice Johnson" [active] [ref=e67]
+              - gridcell "alice@example.com" [ref=e68]
+              - gridcell "29" [ref=e69]
+              - gridcell "Engineer" [ref=e70]
+              - gridcell "Delete row" [ref=e71]:
+                - button "Delete row" [ref=e72] [cursor=pointer]:
+                  - img [ref=e73]
+            - row "Select row 5d671e32-e49a-49bc-9f48-c16c378cb99f Bob Smith bob@example.com 35 Manager Delete row" [ref=e75]:
+              - gridcell "Select row 5d671e32-e49a-49bc-9f48-c16c378cb99f" [ref=e76]:
+                - generic [ref=e77] [cursor=pointer]:
+                  - checkbox "Select row 5d671e32-e49a-49bc-9f48-c16c378cb99f" [ref=e78]
+                  - img [ref=e79]
+              - gridcell "Bob Smith" [ref=e81]
+              - gridcell "bob@example.com" [ref=e82]
+              - gridcell "35" [ref=e83]
+              - gridcell "Manager" [ref=e84]
+              - gridcell "Delete row" [ref=e85]:
+                - button "Delete row" [ref=e86] [cursor=pointer]:
+                  - img [ref=e87]
+            - row "Select row ff710fe7-74ef-4b81-b4f6-192154409dd2 Carol Chen carol@example.com 41 Designer Delete row" [ref=e89]:
+              - gridcell "Select row ff710fe7-74ef-4b81-b4f6-192154409dd2" [ref=e90]:
+                - generic [ref=e91] [cursor=pointer]:
+                  - checkbox "Select row ff710fe7-74ef-4b81-b4f6-192154409dd2" [ref=e92]
+                  - img [ref=e93]
+              - gridcell "Carol Chen" [ref=e95]
+              - gridcell "carol@example.com" [ref=e96]
+              - gridcell "41" [ref=e97]
+              - gridcell "Designer" [ref=e98]
+              - gridcell "Delete row" [ref=e99]:
+                - button "Delete row" [ref=e100] [cursor=pointer]:
+                  - img [ref=e101]
+            - row "Select row cdd867c8-6f39-4c18-b238-88cc8f8626be David Lee david@example.com 26 Engineer Delete row" [ref=e103]:
+              - gridcell "Select row cdd867c8-6f39-4c18-b238-88cc8f8626be" [ref=e104]:
+                - generic [ref=e105] [cursor=pointer]:
+                  - checkbox "Select row cdd867c8-6f39-4c18-b238-88cc8f8626be" [ref=e106]
+                  - img [ref=e107]
+              - gridcell "David Lee" [ref=e109]
+              - gridcell "david@example.com" [ref=e110]
+              - gridcell "26" [ref=e111]
+              - gridcell "Engineer" [ref=e112]
+              - gridcell "Delete row" [ref=e113]:
+                - button "Delete row" [ref=e114] [cursor=pointer]:
+                  - img [ref=e115]
+            - row "Select row e8bd95f8-68ee-4a76-a775-e638e7b59de7 Eve Adams eve@example.com 31 Analyst Delete row" [ref=e117]:
+              - gridcell "Select row e8bd95f8-68ee-4a76-a775-e638e7b59de7" [ref=e118]:
+                - generic [ref=e119] [cursor=pointer]:
+                  - checkbox "Select row e8bd95f8-68ee-4a76-a775-e638e7b59de7" [ref=e120]
+                  - img [ref=e121]
+              - gridcell "Eve Adams" [ref=e123]
+              - gridcell "eve@example.com" [ref=e124]
+              - gridcell "31" [ref=e125]
+              - gridcell "Analyst" [ref=e126]
+              - gridcell "Delete row" [ref=e127]:
+                - button "Delete row" [ref=e128] [cursor=pointer]:
+                  - img [ref=e129]
+      - generic [ref=e131]:
+        - paragraph [ref=e132]: 5 rows
+        - generic [ref=e134]:
+          - paragraph [ref=e135]: "Rows per page:"
+          - generic [ref=e136]:
+            - 'combobox "Rows per page: 10" [ref=e137] [cursor=pointer]': "10"
+            - textbox: "10"
+            - img
+          - paragraph [ref=e138]: 1–5 of 5
+          - generic [ref=e139]:
+            - button "Go to previous page" [disabled]:
+              - img
+            - button "Go to next page" [disabled]:
+              - img
+```
